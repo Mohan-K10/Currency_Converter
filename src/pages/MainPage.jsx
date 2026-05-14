@@ -95,7 +95,9 @@ function MainPage() {
                             <div className="flex gap-50 ">
 
                                 <div className="flex gap-5 text-2xl  py-2">
-                                    <span>Result :</span>
+
+                                    {TargetCurrency ?  <span>Value of {TargetCurrency} :</span> :  <span>Currency Value :</span>}
+                                    
                                     <span>{ResultCurrency * Number(CurrencyInput)}</span>
                                 </div>
                                 <div>
