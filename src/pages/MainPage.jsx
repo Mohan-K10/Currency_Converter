@@ -13,8 +13,8 @@ function MainPage() {
         const data = await currencyexchange({ CurrentCurrency, TargetCurrency })
         console.log("CurrentCurrency:", CurrentCurrency)
         console.log("TargetCurrency:", TargetCurrency)
-        console.log("result for api currerncy")
-        console.log(data)
+        // console.log("result for api currerncy")
+        // console.log(data)
         setResultCurrency(data);
     }
 
@@ -30,7 +30,7 @@ function MainPage() {
                 code: info.iso_code,
                 name: info.name
             }))
-            console.log(data)
+            // console.log(data)
             setCurrencies(currencies)
         }
 
